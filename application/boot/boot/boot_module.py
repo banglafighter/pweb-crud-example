@@ -1,6 +1,8 @@
 from boot.controller.boot_static_controller import boot_static_controller
 from pweb import PWebComponentRegister, PWebModuleDetails
 from boot.controller.home_controller import home_controller
+from boot.controller.person_api_controller import person_api_controller
+from boot.controller.person_controller import person_controller
 
 
 class BootModule(PWebComponentRegister):
@@ -20,3 +22,5 @@ class BootModule(PWebComponentRegister):
     def register_controller(self, pweb_app):
         pweb_app.register_blueprint(home_controller)
         pweb_app.register_blueprint(boot_static_controller)
+        pweb_app.register_blueprint(person_controller)
+        pweb_app.register_blueprint(person_api_controller)
