@@ -1,5 +1,5 @@
 from boot.model.person import Person
-from pweb_form_rest import fields, FileField, EnumField, PWebForm
+from pweb_form_rest import fields, PWebForm
 
 
 class PersonDetailsForm(PWebForm):

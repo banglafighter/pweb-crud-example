@@ -1,5 +1,5 @@
 from boot.model.person import Person
-from pweb_form_rest import fields, PWebRestDTO, FileField, EnumField
+from pweb_form_rest import fields, PWebRestDTO
 
 
 class PersonDetailsDTO(PWebRestDTO):
